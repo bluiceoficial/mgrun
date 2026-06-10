@@ -1,5 +1,8 @@
 # MGRun
 
+> [!NOTE]
+> This repository has been migrated to Codeberg, please see: https://codeberg.org/bluice/mgrun
+
 **MGRun** é um wrapper leve e multiplataforma em Go para execução de comandos do sistema, projetado para simplificar o uso de `exec` com **captura de saída em tempo real**, **callbacks** e **controle seguro de concorrência**.
 
 Ideal para aplicações CLI, ferramentas de automação, instaladores, utilitários desktop e sistemas que precisam acompanhar a execução de comandos enquanto eles ainda estão rodando.
