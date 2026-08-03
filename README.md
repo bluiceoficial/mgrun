@@ -1,10 +1,5 @@
 # MGRun
 
-<!-- Badge opcional para deixar claro visualmente -->
-![Status](https://img.shields.io/badge/status-arquivado--archived-red.svg)
-
-> **Aviso importante:** Esta biblioteca foi **oficialmente arquivada** e não receberá mais atualizações, correções de bugs ou suporte para novas versões.
-
 **MGRun** é um wrapper leve e multiplataforma em Go para execução de comandos do sistema, projetado para simplificar o uso de `exec` com **captura de saída em tempo real**, **callbacks** e **controle seguro de concorrência**.
 
 Ideal para aplicações CLI, ferramentas de automação, instaladores, utilitários desktop e sistemas que precisam acompanhar a execução de comandos enquanto eles ainda estão rodando.
@@ -39,7 +34,7 @@ Ideal para aplicações CLI, ferramentas de automação, instaladores, utilitár
 ## 📦 Instalação
 
 ```bash
-go get github.com/mugomes/mgrun
+go get github.com/profmugomes/mgrun
 ```
 
 ---
@@ -53,7 +48,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mugomes/mgrun"
+	"github.com/profmugomes/mgrun"
 )
 
 func main() {
@@ -89,7 +84,7 @@ func main() {
 
 ## ⚙️ Requisitos
 
-* **Go** 1.25.5 ou superior
+* **Go** 1.26.5 ou superior
 * **PowerShell** (apenas no Windows)
 
 ---
@@ -106,9 +101,9 @@ func main() {
 
 **Murilo Gomes Julio**
 
-🔗 [https://mugomes.github.io](https://mugomes.github.io)
+🔗 [https://www.profmugomes.com.br](https://www.profmugomes.com.br)
 
-📺 [https://youtube.com/@mugomesoficial](https://youtube.com/@mugomesoficial)
+📺 [https://youtube.com/@profmugomes](https://youtube.com/@profmugomes)
 
 ---
 
@@ -116,6 +111,6 @@ func main() {
 
 Copyright (c) 2025-2026 Murilo Gomes Julio
 
-Licensed under the [MIT](https://github.com/mugomes/mgrun/blob/main/LICENSE) license.
+Licensed under the [MIT](https://github.com/profmugomes/mgrun/blob/main/LICENSE) license.
 
 All contributions to the MGRun are subject to this license.
