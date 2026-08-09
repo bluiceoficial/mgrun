@@ -135,6 +135,10 @@ func (e *Executor) readStream(
 			callback(line)
 		}
 	}
+
+	if err := scanner.Err(); err != nil {
+		fmt.Println(err)
+	}
 }
 
 func buildShellCommand(command string) *exec.Cmd {
