@@ -1,6 +1,6 @@
 # MGRun
 
-[![License](https://img.shields.io/badge/license-PolyForm%20Perimeter%201.0.0-5351FB)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-PolyForm%20Perimeter%201.0.1-5351FB)](LICENSE.md)
 
 **MGRun** é um wrapper leve e multiplataforma em Go para execução de comandos do sistema, projetado para simplificar o uso de `exec` com **captura de saída em tempo real**, **callbacks** e **controle seguro de concorrência**.
 
