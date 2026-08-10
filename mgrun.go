@@ -19,23 +19,29 @@ import (
 var ErrNonZeroExit = errors.New("process exited with non-zero status")
 
 type Executor struct {
-	command   string
-	dir       string
-	extraEnvs []string
-	cmd       *exec.Cmd
+	command      string
+	dir          string
+	extraEnvs    []string
+	cmd          *exec.Cmd
+	printCommand bool
 
-	onStdout func(string)
-	onStderr func(string)
+	onStdout     func(string)
+	onStderr     func(string)
 
-	exitCode int
-	sMutex   sync.Mutex
+	exitCode     int
+	sMutex       sync.Mutex
 }
 
 func New(command string) *Executor {
 	return &Executor{
 		command:  command,
 		exitCode: -1,
+		printCommand: false,
 	}
+}
+
+func (e *Executor) PrintCommand() {
+	e.printCommand = true
 }
 
 func (e *Executor) SetDir(path string) {
@@ -127,7 +133,7 @@ func (e *Executor) readStream(
 	for scanner.Scan() {
 		line := scanner.Text()
 
-		if mirror != nil {
+		if e.printCommand && mirror != nil {
 			fmt.Fprintln(mirror, line)
 		}
 
