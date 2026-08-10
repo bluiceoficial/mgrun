@@ -56,6 +56,9 @@ import (
 func main() {
 	sRun := mgrun.New("ls -a")
 
+    // Ativa exibição de resultados
+    sRun.PrintCommand()
+    
 	// Definir diretório de execução (opcional)
 	pathHome, _ := os.UserHomeDir()
 	sRun.SetDir(pathHome)
